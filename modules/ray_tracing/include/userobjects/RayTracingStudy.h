@@ -373,7 +373,7 @@ public:
    * Fills the active RayBCs associated with this study and boundaries result
    */
   template <typename T>
-  void getRayBCs(std::vector<T *> & result, const std::vector<BoundaryID> & ids, THREAD_ID tid)
+  void getRayBCs(std::vector<T *> & result, const std::vector<BoundaryID> & ids, THREAD_ID tid) const
   {
     _fe_problem.theWarehouse()
         .query()
@@ -387,7 +387,7 @@ public:
    * Fills the active RayBCs associated with this study into result
    */
   template <typename T>
-  void getRayBCs(std::vector<T *> & result, THREAD_ID tid)
+  void getRayBCs(std::vector<T *> & result, THREAD_ID tid) const
   {
     _fe_problem.theWarehouse()
         .query()
