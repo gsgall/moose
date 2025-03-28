@@ -14,5 +14,7 @@
 int
 main(int argc, char * argv[])
 {
-  return Moose::main<ElectromagneticsTestApp>(argc, argv);
+  Moose::main<ElectromagneticsTestApp>(argc, argv);
+
+  return 0;
 }
